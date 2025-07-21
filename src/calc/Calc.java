@@ -12,11 +12,9 @@ public class Calc extends javax.swing.JFrame {
         setIconImage() ;
     }
     private void setIconImage() {
-        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("Calculator.png"))); // Generated from
-        // nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("Calculator.png")));
     }
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jScrollBar1 = new javax.swing.JScrollBar();
@@ -37,18 +35,13 @@ public class Calc extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(204, 204, 204));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Calculator");
-
         jLabel2.setText("Number 1");
-
         jLabel3.setText("Number 2");
-
         Number1.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-
         Number2.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-
         jLabel4.setText("Result");
 
         Result.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -186,54 +179,53 @@ public class Calc extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-    private void ClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ClearActionPerformed
+    private void ClearActionPerformed(java.awt.event.ActionEvent evt) {
         Number1.setText(null);
         Number2.setText(null);
         Result.setText(null);
-    }//GEN-LAST:event_ClearActionPerformed
+    }
 
-    private void AddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddActionPerformed
+    private void AddActionPerformed(java.awt.event.ActionEvent evt) {
         double num1 = Double.parseDouble(Number1.getText());
         double num2 = Double.parseDouble(Number2.getText());
         double result = num1 + num2;
         Result.setText(result + "");
-    }//GEN-LAST:event_AddActionPerformed
+    }
 
-    private void MinusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MinusActionPerformed
+    private void MinusActionPerformed(java.awt.event.ActionEvent evt) {
         double num1 = Double.parseDouble(Number1.getText());
         double num2 = Double.parseDouble(Number2.getText());
         double result = num1 - num2;
         Result.setText(result + "");
-    }//GEN-LAST:event_MinusActionPerformed
+    }
 
-    private void MultiplicationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MultiplicationActionPerformed
+    private void MultiplicationActionPerformed(java.awt.event.ActionEvent evt) {
         double num1 = Double.parseDouble(Number1.getText());
         double num2 = Double.parseDouble(Number2.getText());
         double result = num1 * num2;
         Result.setText(result + "");
-    }//GEN-LAST:event_MultiplicationActionPerformed
+    }
 
-    private void DivisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DivisionActionPerformed
+    private void DivisionActionPerformed(java.awt.event.ActionEvent evt) {
         double num1 = Double.parseDouble(Number1.getText());
         double num2 = Double.parseDouble(Number2.getText());
         double result = num1 / num2;
         Result.setText(result + "");
-    }//GEN-LAST:event_DivisionActionPerformed
+    }
 
-    private void ModuleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ModuleActionPerformed
+    private void ModuleActionPerformed(java.awt.event.ActionEvent evt) {
         double num1 = Double.parseDouble(Number1.getText());
         double num2 = Double.parseDouble(Number2.getText());
         double result = num1 % num2;
         Result.setText(result + "");
-    }//GEN-LAST:event_ModuleActionPerformed
+    }
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(() -> new Calc().setVisible(true));
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Add;
     private javax.swing.JButton Clear;
     private javax.swing.JButton Division;
@@ -248,5 +240,4 @@ public class Calc extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollBar jScrollBar1;
-    // End of variables declaration//GEN-END:variables
 }
